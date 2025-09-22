@@ -23,8 +23,6 @@ public class HelloApplication extends Application {
         // Evento: cambio de color
         colorPicker.setOnAction(e -> {
             Color color = colorPicker.getValue();
-            label.setText("Color seleccionado: " + color.toString());
-            label.setTextFill(color); // cambia el color del texto
         });
 
         VBox vbox = new VBox(10, label, colorPicker);
